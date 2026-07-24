@@ -64,6 +64,21 @@ export default function HeroQuoteForm() {
           />
         </div>
 
+        {/* Email */}
+        <div className="sm:col-span-2">
+          <label htmlFor="quote-email" className="sr-only">
+            Email address
+          </label>
+          <input
+            id="quote-email"
+            name="email"
+            type="email"
+            autoComplete="email"
+            placeholder="Email address (optional)"
+            className="w-full rounded-lg bg-white/90 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400"
+          />
+        </div>
+
         {/* Service */}
         <div className="sm:col-span-2">
           <label htmlFor="quote-service" className="sr-only">

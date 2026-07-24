@@ -16,6 +16,7 @@ export async function submitQuoteRequest(
 ): Promise<QuoteFormState> {
   const name = (formData.get("name") as string | null)?.trim() ?? "";
   const phone = (formData.get("phone") as string | null)?.trim() ?? "";
+  const email = (formData.get("email") as string | null)?.trim() ?? "";
   const service = (formData.get("service") as string | null)?.trim() ?? "";
 
   if (!name || !phone) {
@@ -33,7 +34,7 @@ export async function submitQuoteRequest(
   const { error } = await resend.emails.send({
     from: process.env.RESEND_FROM!,
     to: process.env.RESEND_TO!,
-    replyTo: undefined,
+    replyTo: email || undefined,
     subject: `New Quote Request — ${name}`,
     html: `
       <div style="font-family:sans-serif;max-width:520px;margin:0 auto;color:#0f172a">
@@ -50,6 +51,12 @@ export async function submitQuoteRequest(
               <td style="padding:8px 0;color:#64748b">Phone</td>
               <td style="padding:8px 0;font-weight:600">
                 <a href="tel:${phone.replace(/\D/g, "")}" style="color:#d97706">${phone}</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:8px 0;color:#64748b">Email</td>
+              <td style="padding:8px 0">
+                ${email ? `<a href="mailto:${email}" style="color:#d97706">${email}</a>` : "Not provided"}
               </td>
             </tr>
             <tr>
