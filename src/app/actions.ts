@@ -73,7 +73,7 @@ export async function submitQuoteRequest(
   });
 
   if (error) {
-    console.error("[Jones Valley] Resend error:", error);
+    console.error("[Jones Valley] Resend error:", JSON.stringify(error, null, 2));
     return { status: "error", message: "Something went wrong — please call us directly." };
   }
 
