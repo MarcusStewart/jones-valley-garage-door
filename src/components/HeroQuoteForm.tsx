@@ -112,7 +112,7 @@ export default function HeroQuoteForm() {
         disabled={isPending}
         className="mt-4 w-full rounded-lg bg-amber-500 px-6 py-3 text-sm font-semibold text-slate-900 shadow transition hover:bg-amber-400 disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        {isPending ? "Sending…" : "Request a Callback"}
+        {isPending ? "Sending…" : "Request a Quote"}
       </button>
     </form>
   );
