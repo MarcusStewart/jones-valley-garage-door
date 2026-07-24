@@ -16,6 +16,7 @@ export default function Hero({ h1, subhead }: Props) {
         alt="Residential garage door on a well-kept home"
         fill
         priority
+        fetchPriority="high"
         sizes="100vw"
         style={{ objectFit: "cover", objectPosition: "center" }}
       />

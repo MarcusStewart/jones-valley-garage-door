@@ -23,9 +23,21 @@ export const metadata: Metadata = {
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": `${site.url}/#business`,
   name: site.name,
   telephone: site.phone,
   url: site.url,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Huntsville",
+    addressRegion: "AL",
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 34.7304,
+    longitude: -86.5861,
+  },
   areaServed: [
     "Huntsville, AL",
     "Madison, AL",
@@ -34,6 +46,7 @@ const localBusinessJsonLd = {
     "Meridianville, AL",
   ],
   priceRange: "$$",
+  image: `${site.url}/hero.jpg`,
 };
 
 export default function RootLayout({
