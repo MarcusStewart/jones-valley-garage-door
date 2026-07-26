@@ -13,7 +13,7 @@ export default function LocationLinks({ heading = "Areas We Serve" }: Props) {
         Proudly serving{" "}
         {locations.map((l, i) => (
           <span key={l.slug}>
-            <Link href={`/${l.slug}`} className="font-medium text-amber-600 hover:underline">
+            <Link href={`/${l.slug}`} className="font-medium text-red-700 hover:underline">
               {l.city}
             </Link>
             {i < locations.length - 2 ? ", " : i === locations.length - 2 ? ", and " : ""}

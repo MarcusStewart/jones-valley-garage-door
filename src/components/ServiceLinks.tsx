@@ -17,7 +17,7 @@ export default function ServiceLinks({ heading = "What We Fix", excludeSlug }: P
           <li key={s.slug}>
             <Link
               href={`/${s.slug}`}
-              className="block rounded-md border border-slate-200 px-4 py-3 text-slate-800 transition hover:border-amber-400 hover:bg-amber-50"
+              className="block rounded-md border border-slate-200 px-4 py-3 text-slate-800 transition hover:border-red-400 hover:bg-red-50/60"
             >
               {s.title}
             </Link>

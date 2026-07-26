@@ -84,31 +84,31 @@ export default function GarageDoorRepairPage() {
         <p className="mt-4">Depending on what we find, that might mean:</p>
         <ul className="mt-2 list-disc space-y-1 pl-6">
           <li>
-            <Link href="/spring-replacement" className="font-medium text-amber-600 hover:underline">
+            <Link href="/spring-replacement" className="font-medium text-red-700 hover:underline">
               Spring replacement
             </Link>{" "}
             — the most common cause of a door that suddenly won&rsquo;t open
           </li>
           <li>
-            <Link href="/opener-repair" className="font-medium text-amber-600 hover:underline">
+            <Link href="/opener-repair" className="font-medium text-red-700 hover:underline">
               Opener or motor repair
             </Link>{" "}
             — for doors that don&rsquo;t respond, reverse unexpectedly, or run without moving
           </li>
           <li>
-            <Link href="/cable-repair" className="font-medium text-amber-600 hover:underline">
+            <Link href="/cable-repair" className="font-medium text-red-700 hover:underline">
               Cable repair
             </Link>{" "}
             — for a crooked or unevenly hanging door
           </li>
           <li>
-            <Link href="/off-track-repair" className="font-medium text-amber-600 hover:underline">
+            <Link href="/off-track-repair" className="font-medium text-red-700 hover:underline">
               Off-track repair
             </Link>{" "}
             — for a door that&rsquo;s derailed or stuck
           </li>
           <li>
-            <Link href="/panel-replacement" className="font-medium text-amber-600 hover:underline">
+            <Link href="/panel-replacement" className="font-medium text-red-700 hover:underline">
               Panel replacement
             </Link>{" "}
             — for dented, cracked, or rotted sections
@@ -116,7 +116,7 @@ export default function GarageDoorRepairPage() {
           <li>
             <Link
               href="/garage-door-installation"
-              className="font-medium text-amber-600 hover:underline"
+              className="font-medium text-red-700 hover:underline"
             >
               New door installation
             </Link>{" "}

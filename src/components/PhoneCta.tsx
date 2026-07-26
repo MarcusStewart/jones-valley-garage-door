@@ -11,10 +11,11 @@ export default function PhoneCta({ label, className }: Props) {
       href={site.phoneHref}
       className={
         className ??
-        "inline-flex items-center justify-center rounded-md bg-amber-500 px-6 py-3 text-base font-semibold text-slate-900 shadow-sm transition hover:bg-amber-400"
+        "inline-flex items-center justify-center rounded-md bg-red-700 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-red-800"
       }
     >
       {label ?? `Call ${site.phone}`}
     </a>
   );
 }
+

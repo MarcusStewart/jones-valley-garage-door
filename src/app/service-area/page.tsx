@@ -21,7 +21,7 @@ export default function ServiceAreaPage() {
           <li key={l.slug}>
             <Link
               href={`/${l.slug}`}
-              className="block rounded-md border border-slate-200 px-4 py-3 font-medium text-slate-800 transition hover:border-amber-400 hover:bg-amber-50"
+              className="block rounded-md border border-slate-200 px-4 py-3 font-medium text-slate-800 transition hover:border-red-400 hover:bg-red-50/60"
             >
               {l.city}, AL{l.slug === "huntsville-al" ? " — home base, fastest response" : ""}
             </Link>

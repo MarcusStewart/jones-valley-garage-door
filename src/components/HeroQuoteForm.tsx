@@ -27,7 +27,7 @@ export default function HeroQuoteForm() {
       className="rounded-xl bg-white/10 backdrop-blur-sm border border-white/20 px-6 py-6 text-left"
       noValidate
     >
-      <p className="text-sm font-semibold uppercase tracking-widest text-amber-400 mb-4">
+      <p className="text-sm font-semibold uppercase tracking-widest text-red-400 mb-4">
         Get a Free Quote
       </p>
 
@@ -44,7 +44,7 @@ export default function HeroQuoteForm() {
             required
             autoComplete="name"
             placeholder="Your name"
-            className="w-full rounded-lg bg-white/90 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400"
+            className="w-full rounded-lg bg-white/90 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-red-500"
           />
         </div>
 
@@ -60,7 +60,7 @@ export default function HeroQuoteForm() {
             required
             autoComplete="tel"
             placeholder="Phone number"
-            className="w-full rounded-lg bg-white/90 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400"
+            className="w-full rounded-lg bg-white/90 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-red-500"
           />
         </div>
 
@@ -75,7 +75,7 @@ export default function HeroQuoteForm() {
             type="email"
             autoComplete="email"
             placeholder="Email address (optional)"
-            className="w-full rounded-lg bg-white/90 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400"
+            className="w-full rounded-lg bg-white/90 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-red-500"
           />
         </div>
 
@@ -87,7 +87,7 @@ export default function HeroQuoteForm() {
           <select
             id="quote-service"
             name="service"
-            className="w-full rounded-lg bg-white/90 px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-amber-400"
+            className="w-full rounded-lg bg-white/90 px-4 py-3 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-500"
           >
             <option value="">Service needed (optional)</option>
             {services.map((s) => (
@@ -110,7 +110,7 @@ export default function HeroQuoteForm() {
       <button
         type="submit"
         disabled={isPending}
-        className="mt-4 w-full rounded-lg bg-amber-500 px-6 py-3 text-sm font-semibold text-slate-900 shadow transition hover:bg-amber-400 disabled:opacity-60 disabled:cursor-not-allowed"
+        className="mt-4 w-full rounded-lg bg-red-700 px-6 py-3 text-sm font-semibold text-white shadow transition hover:bg-red-800 disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {isPending ? "Sending…" : "Request a Quote"}
       </button>

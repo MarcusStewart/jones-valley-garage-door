@@ -16,7 +16,7 @@ export default function ContactPage() {
         <div>
           <dt className="text-sm font-semibold text-slate-500">Phone</dt>
           <dd>
-            <a href={site.phoneHref} className="text-lg font-semibold text-amber-600">
+            <a href={site.phoneHref} className="text-lg font-semibold text-red-700 hover:underline">
               {site.phone}
             </a>
           </dd>
