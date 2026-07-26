@@ -13,6 +13,7 @@ export default function ServiceSchema({ name, description }: Props) {
     description,
     provider: {
       "@type": "LocalBusiness",
+      "@id": `${site.url}/#business`,
       name: site.name,
       telephone: site.phone,
       url: site.url,
